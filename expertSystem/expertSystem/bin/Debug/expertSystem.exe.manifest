@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="expertSystem.exe" size="596448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="expertSystem.exe" size="654816">
       <assemblyIdentity name="expertSystem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8aUjulIyyf0ckBJ4LkQ1lBuKGRjDNyVA1u42sEGMgAo=</dsig:DigestValue>
+        <dsig:DigestValue>6+e0yvR9Yov5hAMhCuezT5exmUm863P2pVDHZp6aJTU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="expertSystem.exe.config" size="189">
+  <file name="expertSystem.exe.config" size="793">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+      <dsig:DigestValue>zYEW60mqy06IaZpl2YOZIVSp4k2AwaQc+EFg8UTqak8=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(habitosCRUD));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,8 +40,26 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.habitos_EstudioDataSet = new expertSystem.Habitos_EstudioDataSet();
+            this.objetosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.objetosTableAdapter = new expertSystem.Habitos_EstudioDataSetTableAdapters.objetosTableAdapter();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.hábitosDeEstudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarHabitosDeEstudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verHabitosDeEstudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarHabitosDeEstudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caracteristicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarCaracteristicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verCaracteristicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarCaracteristicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cuadroMofologicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habitos_EstudioDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objetosBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -119,6 +138,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Aceptar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -144,6 +164,109 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // habitos_EstudioDataSet
+            // 
+            this.habitos_EstudioDataSet.DataSetName = "Habitos_EstudioDataSet";
+            this.habitos_EstudioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // objetosBindingSource
+            // 
+            this.objetosBindingSource.DataMember = "objetos";
+            this.objetosBindingSource.DataSource = this.habitos_EstudioDataSet;
+            // 
+            // objetosTableAdapter
+            // 
+            this.objetosTableAdapter.ClearBeforeFill = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hábitosDeEstudioToolStripMenuItem,
+            this.caracteristicasToolStripMenuItem,
+            this.cuadroMofologicoToolStripMenuItem,
+            this.opcionesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // hábitosDeEstudioToolStripMenuItem
+            // 
+            this.hábitosDeEstudioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarHabitosDeEstudioToolStripMenuItem,
+            this.verHabitosDeEstudioToolStripMenuItem,
+            this.borrarHabitosDeEstudioToolStripMenuItem});
+            this.hábitosDeEstudioToolStripMenuItem.Name = "hábitosDeEstudioToolStripMenuItem";
+            this.hábitosDeEstudioToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.hábitosDeEstudioToolStripMenuItem.Text = "Hábitos de Estudio";
+            // 
+            // agregarHabitosDeEstudioToolStripMenuItem
+            // 
+            this.agregarHabitosDeEstudioToolStripMenuItem.Name = "agregarHabitosDeEstudioToolStripMenuItem";
+            this.agregarHabitosDeEstudioToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.agregarHabitosDeEstudioToolStripMenuItem.Text = "Agregar Habitos de Estudio";
+            // 
+            // verHabitosDeEstudioToolStripMenuItem
+            // 
+            this.verHabitosDeEstudioToolStripMenuItem.Name = "verHabitosDeEstudioToolStripMenuItem";
+            this.verHabitosDeEstudioToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.verHabitosDeEstudioToolStripMenuItem.Text = "Ver Habitos de Estudio";
+            // 
+            // borrarHabitosDeEstudioToolStripMenuItem
+            // 
+            this.borrarHabitosDeEstudioToolStripMenuItem.Name = "borrarHabitosDeEstudioToolStripMenuItem";
+            this.borrarHabitosDeEstudioToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.borrarHabitosDeEstudioToolStripMenuItem.Text = "Borrar Habitos de Estudio";
+            // 
+            // caracteristicasToolStripMenuItem
+            // 
+            this.caracteristicasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarCaracteristicasToolStripMenuItem,
+            this.verCaracteristicasToolStripMenuItem,
+            this.borrarCaracteristicasToolStripMenuItem});
+            this.caracteristicasToolStripMenuItem.Name = "caracteristicasToolStripMenuItem";
+            this.caracteristicasToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.caracteristicasToolStripMenuItem.Text = "Caracteristicas";
+            // 
+            // agregarCaracteristicasToolStripMenuItem
+            // 
+            this.agregarCaracteristicasToolStripMenuItem.Name = "agregarCaracteristicasToolStripMenuItem";
+            this.agregarCaracteristicasToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.agregarCaracteristicasToolStripMenuItem.Text = "Agregar Caracteristicas";
+            // 
+            // verCaracteristicasToolStripMenuItem
+            // 
+            this.verCaracteristicasToolStripMenuItem.Name = "verCaracteristicasToolStripMenuItem";
+            this.verCaracteristicasToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.verCaracteristicasToolStripMenuItem.Text = "Ver Caracteristicas";
+            // 
+            // borrarCaracteristicasToolStripMenuItem
+            // 
+            this.borrarCaracteristicasToolStripMenuItem.Name = "borrarCaracteristicasToolStripMenuItem";
+            this.borrarCaracteristicasToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.borrarCaracteristicasToolStripMenuItem.Text = "Borrar Caracteristicas";
+            // 
+            // cuadroMofologicoToolStripMenuItem
+            // 
+            this.cuadroMofologicoToolStripMenuItem.Name = "cuadroMofologicoToolStripMenuItem";
+            this.cuadroMofologicoToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.cuadroMofologicoToolStripMenuItem.Text = "Cuadro Mofologico";
+            // 
+            // opcionesToolStripMenuItem
+            // 
+            this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem});
+            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
+            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.opcionesToolStripMenuItem.Text = "Opciones";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
             // habitosCRUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,15 +277,23 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "habitosCRUD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "habitosCRUD";
+            this.Load += new System.EventHandler(this.habitosCRUD_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habitos_EstudioDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objetosBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -178,5 +309,20 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private Habitos_EstudioDataSet habitos_EstudioDataSet;
+        private System.Windows.Forms.BindingSource objetosBindingSource;
+        private Habitos_EstudioDataSetTableAdapters.objetosTableAdapter objetosTableAdapter;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hábitosDeEstudioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caracteristicasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cuadroMofologicoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem opcionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarCaracteristicasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verCaracteristicasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem borrarCaracteristicasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarHabitosDeEstudioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verHabitosDeEstudioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem borrarHabitosDeEstudioToolStripMenuItem;
     }
 }

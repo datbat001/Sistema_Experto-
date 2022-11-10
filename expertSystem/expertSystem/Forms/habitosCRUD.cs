@@ -30,5 +30,23 @@ namespace expertSystem.Forms
                 txtbox2.Text = "";
             }
         }
+
+        private void habitosCRUD_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'habitos_EstudioDataSet.objetos' table. You can move, or remove it, as needed.
+            this.objetosTableAdapter.Fill(this.habitos_EstudioDataSet.objetos);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 fomr = new Form1();
+            fomr.Show();
+        }
     }
 }
